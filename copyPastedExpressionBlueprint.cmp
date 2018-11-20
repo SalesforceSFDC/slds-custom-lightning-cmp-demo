@@ -1,0 +1,231 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <div class="slds-card slds-p-around_large">
+        <div class="slds-expression">
+            <h2 class="slds-expression__title">Conditions</h2>
+            <div class="slds-expression__options">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="combobox-id-154">Take Action When</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-combobox_container">
+                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                    <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-id-154" aria-controls="listbox-id-148" autoComplete="off" role="textbox" placeholder="Select an Option" readonly="" value="All Conditions Are Met"/>
+                                    <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                        <!-- Replaced SVG with lightning:icon -->
+                                        <lightning:icon iconName="utility:down" size="xx-small" /> 
+                                    </span>
+                                </div>
+                                <div id="listbox-id-148" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                        <li role="presentation" class="slds-listbox__item">
+                                            <div aria-selected="true" id="listbox-option-id-644" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus" role="option">
+                                                <span class="slds-media__figure slds-listbox__option-icon">
+                                                    <span class="slds-icon_container slds-icon-utility-check slds-current-color">
+                                                        <!-- Replaced SVG with lightning:icon -->
+                                                        <lightning:icon iconName="utility:check" size="xx-small" /> 
+                                                    </span>
+                                                </span>
+                                                <span class="slds-media__body">
+                                                    <span class="slds-truncate" title="All Conditions Are Met">
+                                                        <span class="slds-assistive-text">Current Selection:</span> All Conditions Are Met</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li role="presentation" class="slds-listbox__item">
+                                            <div id="listbox-option-id-645" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                <span class="slds-media__body">
+                                                    <span class="slds-truncate" title="Any Condition Is Met"> Any Condition Is Met</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li role="presentation" class="slds-listbox__item">
+                                            <div id="listbox-option-id-646" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                <span class="slds-media__body">
+                                                    <span class="slds-truncate" title="Custom Logic Is Met"> Custom Logic Is Met</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li role="presentation" class="slds-listbox__item">
+                                            <div id="listbox-option-id-647" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                <span class="slds-media__body">
+                                                    <span class="slds-truncate" title="Always (No Criteria)"> Always (No Criteria)</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li role="presentation" class="slds-listbox__item">
+                                            <div id="listbox-option-id-648" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                <span class="slds-media__body">
+                                                    <span class="slds-truncate" title="Formula Evaluates To True"> Formula Evaluates To True</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="slds-expression__row">
+                    <fieldset>
+                        <legend class="slds-expression__legend">
+                            <span class="slds-assistive-text">Condition 1</span>
+                        </legend>
+                        <div class="slds-grid slds-gutters_xx-small">
+                            <div class="slds-col">
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="combobox-id-155">Resource</label>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-combobox_container">
+                                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                                    <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-id-155" aria-controls="listbox-id-149" autoComplete="off" role="textbox" placeholder="Select an Option" readonly="" value="Resource 1"
+                                                           />
+                                                    <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                                        <!-- Replaced SVG with lightning:icon -->
+                                                        <lightning:icon iconName="utility:down" size="xx-small" /> 
+                                                    </span>
+                                                </div>
+                                                <div id="listbox-id-149" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div aria-selected="true" id="listbox-option-id-649" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon">
+                                                                    <span class="slds-icon_container slds-icon-utility-check slds-current-color">
+                                                                        <!-- Replaced SVG with lightning:icon -->
+                                                                        <lightning:icon iconName="utility:check" size="xx-small" /> 
+                                                                    </span>
+                                                                </span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Resource 1">
+                                                                        <span class="slds-assistive-text">Current Selection:</span> Resource 1</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-650" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Resource 2"> Resource 2</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-651" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Resource 3"> Resource 3</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-652" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Resource 4"> Resource 4</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-grow-none">
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="combobox-id-156">Operator</label>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-combobox_container">
+                                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                                    <input type="text" class="slds-input slds-combobox__input" id="combobox-id-156" aria-controls="listbox-id-150" autoComplete="off" role="textbox" placeholder="Select an Option" readonly="" />
+                                                    <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                                        <!-- Replaced SVG with lightning:icon -->
+                                                        <lightning:icon iconName="utility:down" size="xx-small" /> 
+                                                    </span>
+                                                </div>
+                                                <div id="listbox-id-150" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-653" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Equals"> Equals</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-654" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Does Not Equal"> Does Not Equal</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-655" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Greater Than"> Greater Than</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li role="presentation" class="slds-listbox__item">
+                                                            <div id="listbox-option-id-656" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                                                <span class="slds-media__body">
+                                                                    <span class="slds-truncate" title="Less Than"> Less Than</span>
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col">
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="text-input-id-56">Value</label>
+                                    <div class="slds-form-element__control">
+                                        <input type="text" id="text-input-id-56" class="slds-input" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-grow-none">
+                                <div class="slds-form-element">
+                                    <span class="slds-form-element__label">&nbsp;</span>
+                                    <div class="slds-form-element__control">
+                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" title="Delete Condition 1">
+                                            <!-- Replaced SVG with lightning:icon -->
+                                            <lightning:icon iconName="utility:delete" size="xx-small" alternativeText="Delete Condition 1" />
+                                            <span class="slds-assistive-text">Delete Condition 1</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </li>
+            </ul>
+            <div class="slds-expression__buttons">
+                <button class="slds-button slds-button_neutral">
+                    <!-- Replaced SVG with lightning:icon -->
+                    <lightning:icon iconName="utility:add" size="xx-small" />
+                    Add Condition</button>
+                <button class="slds-button slds-button_neutral">
+                    <!-- Replaced SVG with lightning:icon -->
+                    <lightning:icon iconName="utility:add" size="xx-small" />
+                    Add Group</button>
+            </div>
+        </div>
+    </div>
+</aura:component>

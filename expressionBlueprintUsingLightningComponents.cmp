@@ -1,0 +1,64 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="logicOptions" type="List" default="[
+                                                             {'label': 'All Conditions Are Met', 'value': 'all'},
+                                                             {'label': 'Any Condition Is Met', 'value': 'any'},
+                                                             {'label': 'Custom Logic Is Met', 'value': 'custom'},
+                                                             ]"/>
+    <aura:attribute name="timeOptions" type="List" default="[
+                                                            {'label': 'Month', 'value': 'month'},
+                                                            {'label': 'Day', 'value': 'day'},
+                                                            {'label': 'Hour', 'value': 'hour'},
+                                                            ]"/>
+    <aura:attribute name="operatorOptions" type="List" default="[
+                                                                {'label': 'Is Equal To', 'value': 'equal'},
+                                                                {'label': 'Is Before', 'value': 'before'},
+                                                                {'label': 'Is After', 'value': 'after'},
+                                                                ]"/>
+    
+    <div class="slds-card slds-p-around_large slds-clearfix">  
+        <div class="slds-expression">
+            <h2 class="slds-expression__title">        
+                <lightning:formattedRichText value="Build your order for: &lt;a href=&quot;http://www.salesforce.com&quot;&gt;Dreamforce Attendees&lt;/a&gt;" class="slds-text-heading_medium" />
+            </h2>
+            <div class="slds-expression__options">
+                <lightning:combobox name="logic" label="Send Pizza When" value="all" options="{! v.logicOptions }"/>
+            </div>
+            <ul>
+                <li class="slds-expression__row">
+                    <fieldset>
+                        <legend class="slds-expression__legend">
+                            <span class="slds-assistive-text">Condition 1</span>
+                        </legend>
+                        <div class="slds-grid slds-gutters_xx-small">
+                            <div class="slds-col">
+                                <lightning:combobox name="time" label="Time" options="{! v.timeOptions }"/>
+                            </div>                            
+                            <div class="slds-col slds-grow-none">
+                                <lightning:combobox name="timeOperator" label="Operator" options="{!v.operatorOptions}" />
+                            </div>
+                            <div class="slds-col">
+                                <lightning:input type="number" name="timeValue" label="Value" />
+                            </div>
+                            <div class="slds-col slds-grow-none">
+                                <div class="slds-form-element">
+                                    <span class="slds-form-element__label">&nbsp;</span>
+                                    <div class="slds-form-element__control">
+                                        <lightning:buttonIcon iconName="utility:delete" alternativeText="Delete Condition 1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </li>
+            </ul>
+            
+            <div class="slds-expression__buttons">
+                <lightning:button iconName="utility:add" iconPosition="left" label="Add Condition" />
+            </div>
+        </div>
+        
+        <div class="slds-float_right">
+            <lightning:button variant="brand" label="Submit"/>
+        </div>
+    </div>
+</aura:component>

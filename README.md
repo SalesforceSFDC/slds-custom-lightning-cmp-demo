@@ -7,7 +7,6 @@
     * a container `(slds-form-element__control)`, 
     * and the form element, i.e. `<input>`.
 
-
 <p> Upload a completed W-8 form (of any type).  Don't have one? <br />
    Download a W-8BEN-E Substitute form, complete, and submit. </p>
    

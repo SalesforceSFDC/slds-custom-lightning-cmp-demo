@@ -8,7 +8,9 @@
     * and the form element, i.e. `<input>`.
 
 
-
+<p> Upload a completed W-8 form (of any type).  Don't have one? <br />
+   Download a W-8BEN-E Substitute form, complete, and submit. </p>
+   
 ## Dreamforce Demo
 This repository contains the demo code from our Dreamforce '18 talk for [Building Custom Lightning Components with the Lightning Design System](https://www.youtube.com/watch?v=-Ytt0HcbmxU)
 

@@ -1,4 +1,12 @@
-# Welcome
+# SLDS
+## Form Elements
+### Structure
+To create a form element, a <div> element with the class slds-form-element is required.
+A form element is made up of three primary elements, the label (slds-form-element__label), a container (slds-form-element__control), and the form element, i.e. <input>.
+
+
+
+## Dreamforce Demo
 This repository contains the demo code from our Dreamforce '18 talk for [Building Custom Lightning Components with the Lightning Design System](https://www.youtube.com/watch?v=-Ytt0HcbmxU)
 
 ## Files
